@@ -10,4 +10,4 @@ updates:
     # Check for updates once a day
     schedule:
       interval: "daily"
-    target-branch: "development"
+    target-branch: "dev"
