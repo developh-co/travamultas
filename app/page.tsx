@@ -19,13 +19,13 @@ export default function Home() {
           duration: 0.7,
           delay: loading ? 2.5 : 0,
           ease: 'easeInOut'
-        }} // Adjust delay to match preloader
+        }}
         className='relative min-h-screen bg-teaser bg-cover bg-center bg-no-repeat'
       >
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: loading ? 0 : 1 }}
-          transition={{ duration: 0.3, delay: 1.5, ease: 'easeInOut' }} // Starts fading in after the background
+          transition={{ duration: 0.3, delay: 1.5, ease: 'easeInOut' }}
           className={`absolute inset-0 ${loading ? 'hidden' : ''}`}
         >
           <Teaser />
