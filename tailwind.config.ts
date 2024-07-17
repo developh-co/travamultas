@@ -7,7 +7,15 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        beige: '#E8E8E8',
+        body: '#294E6B'
+      },
+      backgroundImage: {
+        teaser: 'url(/background/teaser.jpg)'
+      }
+    }
   },
   plugins: []
 }

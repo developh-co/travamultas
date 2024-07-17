@@ -5,9 +5,9 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: 'npm'
+    directory: '/'
     # Check for updates once a day
     schedule:
-      interval: "daily"
-    target-branch: "dev"
+      interval: 'daily'
+    target-branch: 'dev'
