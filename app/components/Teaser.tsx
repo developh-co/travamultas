@@ -6,13 +6,12 @@ export default function Teaser() {
     <main className='h-dvh text-body px-8 py-8 sm:px-24 lg:px-32 lg:p-28 2xl:px-56 2xl:p-28 lg:flex-row lg:flex'>
       <div className='h-full w-full bg-beige rounded-xl items-center gap-10 px-8 py-8 flex flex-col lg:w-1/3 2xl:w-1/4 lg:rounded-r-none'>
         <h1 className='text-4xl lg:hidden'>Website Em Construção</h1>
-        <div className='flex flex-col text-body justify-between h-full gap-4 text-justify lg:justify-center sm:text-xl sm:px-10 sm:gap-2 lg:text-xl lg:px-0 lg:gap-4'>
+        <div className='flex flex-col text-body justify-between h-full gap-4 text-left lg:justify-center sm:text-xl sm:px-10 sm:gap-2 lg:text-xl lg:px-0 lg:gap-4'>
           <p>Analisaremos de forma rápida a sua contraordenação.</p>
           <p>
             O objetivo é evitar que fique inibido de conduzir ou que perca
             pontos na sua carta de condução.
           </p>
-          <p>O nosso lançamento está previsto para dia 1 de outubro. </p>
           <p>Fique a par!</p>
         </div>
         <Link

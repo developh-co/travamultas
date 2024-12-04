@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 import { useEffect } from 'react'
+import logo from '../../public/logo/logo.png'
+import Image from 'next/image'
 
 interface PreloaderProps {
   setLoading: (loading: boolean) => void
@@ -19,15 +21,16 @@ export default function Preloader({ setLoading }: PreloaderProps) {
       className='fixed top-0 left-0 w-full h-full items-center justify-center bg-beige px-10 flex-col flex gap-10'
     >
       <motion.div
+        className='flex flex-col justify-center items-center'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2, ease: 'easeInOut' }}
       >
-        <h1 className='text-4xl text-body'>Trava Multas</h1>
+        <Image src={logo} width={200} height={200} alt='Trava Multas Logo' />
       </motion.div>
 
       <motion.div
-        className='w-1/3 h-1 bg-body rounded-full'
+        className='w-1/3 h-1 bg-amber-900 rounded-full'
         initial={{ width: '0%' }}
         animate={{ width: '100%' }}
         transition={{ duration: 2, ease: 'easeInOut' }}
