@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import logo from '../../public/logo/logo.png'
 
 export default function Teaser() {
   return (
@@ -25,12 +26,7 @@ export default function Teaser() {
             href='https://consultoriojuridico.net/ '
             className='h-full w-2/3 relative sm:w-1/3 lg:w-1/2 hover:scale-95 transition-all ease-in-out duration-300 '
           >
-            <Image
-              className='object-contain'
-              src='/logo/logo.svg'
-              fill={true}
-              alt=''
-            />
+            <Image className='object-contain' src={logo} fill={true} alt='' />
           </Link>
         </div>
       </div>
